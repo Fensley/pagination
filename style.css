@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+}
+.first {
+  display: flex;
+  gap: 10px;
+  margin: 30px 0;
+  align-items: center;
+}
+.first p,
+.fa-ellipsis,
+.second i {
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.first-ctn,
+.second-ctn {
+  margin-bottom: 80px;
+}
+.third-intial-one,
+.second-intial-one {
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+}
+.first-intial-one,
+.first-intial-two,
+.second-intial-two,
+.third-intial-two {
+  background-color: black;
+  color: white;
+}
+.third p,
+.third i {
+  box-shadow: none;
+}
+.second i {
+  border-radius: 50%;
+}
