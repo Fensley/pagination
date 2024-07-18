@@ -39,13 +39,19 @@ body {
   background-color: black;
   color: white;
   border-radius: 50%;
+  transition: ease 0.5s;
 }
 .first-intial-one,
 .first-intial-two,
-.second-intial-two,
 .third-intial-two {
   background-color: black;
   color: white;
+  transition: ease 0.5s;
+}
+.second-intial-two {
+  background-color: black;
+  color: white;
+  transition: ease 0.5s;
 }
 .third p,
 .third i {
@@ -53,4 +59,7 @@ body {
 }
 .second i {
   border-radius: 50%;
+}
+i {
+  cursor: pointer;
 }
