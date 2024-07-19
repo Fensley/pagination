@@ -4,8 +4,53 @@ document.addEventListener("DOMContentLoaded", () => {
   const para = document.querySelectorAll(".secondtwo p");
   const prev = document.querySelector(".prev");
   const next = document.querySelector(".next");
+  const dataone = document.querySelectorAll(".first-third-vone p");
+  const nextkat = document.querySelector(".katun");
+  const datatwo = document.querySelectorAll(".first-third-vtwo p");
+  const nextsinkvone = document.querySelector(".sinkde");
+  const nextsinkvtwo = document.querySelector(".sinktwa");
+  // console.log(datatwo);
+
   let intial = 1;
   let secondInitial = 0;
+  let thirdinitial = 0;
+  let fouthinitial = 1;
+
+  function sectionthree() {
+    function dataoneproblem() {
+      dataone.forEach((each, index) => {
+        each.classList.toggle("third-intial-one", thirdinitial === index);
+      });
+    }
+    dataoneproblem();
+
+    nextkat.addEventListener("click", () => {
+      if (thirdinitial < dataone.length - 1) {
+        thirdinitial++;
+        dataoneproblem();
+      }
+    });
+
+    function datatwoproblem() {
+      datatwo.forEach((each, index) => {
+        each.classList.toggle("third-intial-two", fouthinitial === index);
+      });
+    }
+    datatwoproblem();
+    nextsinkvone.addEventListener("click", () => {
+      if (fouthinitial > 0) {
+        fouthinitial--;
+        datatwoproblem();
+      }
+    });
+
+    nextsinkvtwo.addEventListener("click", () => {
+      if (fouthinitial < datatwo.length - 1) {
+        fouthinitial++;
+        datatwoproblem();
+      }
+    });
+  }
 
   function sectionone() {
     function Theparenttwo() {
@@ -64,4 +109,5 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   sectiontwo();
   sectionone();
+  sectionthree();
 });
